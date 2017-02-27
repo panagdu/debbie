@@ -1,0 +1,5 @@
+{
+	"workbench.welcome.enabled": false,
+	"window.menuBarVisibility": "toggle",
+	"terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline"
+}
