@@ -1,5 +1,14 @@
 {
-	"workbench.welcome.enabled": false,
-	"window.menuBarVisibility": "toggle",
-	"terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline"
+    "workbench.welcome.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 0,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.openPositioning": "left",
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 80,
+    "workbench.statusBar.visible": false,
+    "files.autoSave": "afterDelay"
 }
+
