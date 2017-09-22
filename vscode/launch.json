@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node2",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceRoot}/server.js",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_PATH": "."
+            }
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "tdd",
+                "--recursive",
+                "--timeout",
+                "15000",
+                "--reporter",
+                "spec",
+                "--colors",
+                "${workspaceRoot}/test/component"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "NODE_PATH": "."
+            }
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "processId": "${command:PickProcess}",
+            "port": 5858
+        }
+    ]
+}
